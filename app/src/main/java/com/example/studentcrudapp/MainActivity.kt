@@ -16,7 +16,7 @@ class MainActivity : ComponentActivity() {
 
         //Room Setup
         val dao = AppDatabase.getDatabase(this).studentDao()
-        val repository = StudentRepository(dao)
+        val repository = StudentRepository (dao)
         val factory = StudentViewModelFactory(repository)
 
         setContent {

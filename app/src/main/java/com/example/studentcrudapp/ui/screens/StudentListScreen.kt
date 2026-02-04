@@ -10,7 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.example.studentcrudapp.data.entity.Student
 import com.example.studentcrudapp.viewmodel.StudentViewModel
-
+  
 @Composable
 fun StudentListScreen(viewModel: StudentViewModel) {
 

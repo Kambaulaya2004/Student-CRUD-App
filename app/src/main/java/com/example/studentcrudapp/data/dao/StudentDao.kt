@@ -5,8 +5,8 @@ import kotlinx.coroutines.flow.Flow
 import com.example.studentcrudapp.data.entity.Student
 
 @Dao
-interface StudentDao {
-    @Query  ("SELECT * FROM student")
+interface StudentDao{
+    @Query ("SELECT * FROM student")
     fun getAllStudents(): Flow<List<Student>>
 
     @Insert (onConflict = OnConflictStrategy.REPLACE)
@@ -16,5 +16,5 @@ interface StudentDao {
     suspend fun updateStudent(student: Student)
 
     @Delete
-    suspend fun deleteStudent(student: Student)
+    suspend fun deleteStudent(student:Student)
 }
