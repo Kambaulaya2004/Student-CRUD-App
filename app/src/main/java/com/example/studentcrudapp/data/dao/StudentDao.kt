@@ -5,7 +5,7 @@ import kotlinx.coroutines.flow.Flow
 import com.example.studentcrudapp.data.entity.Student
 
 @Dao
-interface StudentDao{
+interface StudentDao {
     @Query ("SELECT * FROM student")
     fun getAllStudents(): Flow<List<Student>>
 
