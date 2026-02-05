@@ -7,7 +7,7 @@ import androidx.room.RoomDatabase
 import com.example.studentcrudapp.data.entity.Student
 import com.example.studentcrudapp.data.dao.StudentDao
 
-@Database (
+@Database(
     entities = [Student::class],
     version = 1,
     exportSchema = false
