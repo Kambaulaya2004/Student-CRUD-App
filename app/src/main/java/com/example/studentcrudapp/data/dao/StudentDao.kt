@@ -9,7 +9,7 @@ interface StudentDao {
     @Query ("SELECT * FROM student")
     fun getAllStudents(): Flow<List<Student>>
 
-    @Insert (onConflict = OnConflictStrategy.REPLACE)
+    @Insert
     suspend fun insertStudent(student: Student)
 
     @Update
